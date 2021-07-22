@@ -1,0 +1,78 @@
+body {
+    margin: 0 auto;
+    width: 1600px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.textColor{
+    color: rgb(77, 48, 48);
+}
+.header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 212, 212);
+    padding: 0 30px;
+    margin-bottom: 60px;
+}
+.header-left{
+    display: flex;
+}
+
+.button{
+    border: none;
+    background-color: rgb(238, 212, 212);
+    font-size: 19px;
+    cursor: pointer;
+}
+.padRight{
+    padding-right: 50px;
+}
+.logo{
+    background-color: rgb(238, 212, 212);
+    text-decoration: none;
+
+}.heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.goods-list{
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+   text-align: center;
+}
+.goods-item{
+    width: 350px;
+    margin-top: 50px;
+}
+.productPrice{
+    color: rgb(147, 105, 105);
+    font-size: 20px;
+}
+.productImage{
+    width: 100%;
+}
+.description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+.addToCart{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(164, 86, 86);
+    border: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.addToCart:hover{
+    background-color: rgb(70, 140, 117);
+    color: rgb(255, 255, 255);
+}
