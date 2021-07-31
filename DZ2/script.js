@@ -43,7 +43,7 @@ class GoodsList {
             (accumulator, currentValue) => accumulator + currentValue.price,
             initionValue
         );
-        console.log(sum)
+        return sum;
     }
 }
 
