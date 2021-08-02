@@ -60,22 +60,40 @@ class List {
             this.allproducts.push(productObj)
             block.insertAdjacentHTML('beforeend', productObj.render())
         }
-
+        // const listContext = {
+        //     ProductList: ProductItem,
+        //     Cart: CartItem
+        // }
     }
 
     // Метод поиска товаров
-    filter() {
-
+    filter(value) {
+        const regexp = new RegExp(value)
+        this.filtered = this.allproducts.filter(product => regexp.test(product.product_name))
+        this.allproducts.forEach(el => {
+            let div = document.querySelector("product-item[data-id = `${el.id_product}`]")
+            if (!this.filtered.includes(el)) {
+                div.classList.add('hidden')
+            } else {
+                div.classList.remove('hidden')
+            }
+        })
+    }
+    _init() {
+        return false
     }
 }
 
-const listContext = {
-    ProductList: ProductItem,
-    Cart: CartItem
-}
-
 class Item {
-    constructor()
+    constructor(el) {
+        this.product_name = el.product_name;
+        this.price = el.price;
+        this.id_product = el.id_product;
+        this.img = img;
+    }
+    render() {
+        return ``
+    }
 }
 
 
