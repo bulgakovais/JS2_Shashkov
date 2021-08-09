@@ -202,7 +202,7 @@ class Cart extends List {
     }
     _updateCart(product) {
         let block = document.querySelector(`.cart-item[data-id = "${product.id_product}"]`)
-        block.querySelector('.product-quantity').textContent = `Кол-во ${product.quantity}`
+        block.querySelector('.product-quantity').textContent = `Кол-во: ${product.quantity}`
         block.querySelector('.product-price').textContent = `Итого ${product.price * product.quantity}p.`
     }
     init() {
