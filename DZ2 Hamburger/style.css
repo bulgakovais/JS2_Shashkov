@@ -1,0 +1,42 @@
+body {
+    margin: 0 auto;
+    width: 1420px;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.heading{
+    color: rgb(32, 89, 35);
+}
+.text{
+    font-size: 25px;
+    color:  rgb(254, 89, 0);
+}
+.form-check{
+    margin-bottom: 10px;
+}
+.form-check:hover{
+    color: rgb(254, 89, 0);
+}
+.hidden{
+    display: none;
+}
+.resultOfBurger{
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    color: rgb(254, 89, 0);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.submit{
+    margin-top: 30px;
+    font-size: 20px;
+    background-color:  rgb(27, 130, 32);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+}
