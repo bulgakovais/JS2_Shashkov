@@ -1,0 +1,152 @@
+body {
+    margin: 0 auto;
+    width: 1600px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.textColor{
+    color: rgb(77, 48, 48);
+}
+.header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 212, 212);
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-right{
+    display: flex;
+}
+.search-field{
+    background-color: rgb(98, 142, 127);
+    border: none;
+    height: 25px;
+    width: 200px;
+    color: white;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}
+.button{
+    border: none;
+    background-color: rgb(238, 212, 212);
+    font-size: 19px;
+    cursor: pointer;
+}
+.button-cart:hover .fa-shopping-cart{
+    color: rgb(70, 140, 117);
+}
+.delete-button{
+    border: none;
+    background-color: transparent;
+    width: 20px;
+}
+
+.delete-button:hover .fa-trash-alt{
+    color: rgb(189, 36, 36);
+}
+.fa-trash-alt{
+    font-size: 16px;
+    color: rgb(77, 48, 48);
+}
+.image-cart-product{
+    width: 20%;
+    object-fit: contain;
+}
+.padRight{
+    padding-right: 50px;
+}
+.logo{
+    background-color: rgb(238, 212, 212);
+    text-decoration: none;
+
+}.heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+   text-align: center;
+}
+.product{
+    width: 350px;
+    margin-top: 50px;
+}
+.productPrice{
+    color: rgb(147, 105, 105);
+    font-size: 20px;
+}
+.productImage{
+    width: 100%;
+}
+.product-item{
+    width: 40%;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 100%;
+}
+.paragraf{
+    margin-bottom: 10px;
+}
+.right-block{
+    display: flex;
+   justify-content: space-between;
+}
+
+.addToCart{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(164, 86, 86);
+    border: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.addToCart:hover{
+    background-color: rgb(70, 140, 117);
+    color: rgb(255, 255, 255);
+}
+.cart-block{
+    /* border: 1px solid rosybrown; */
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    flex-direction: column;
+    background-color: rgb(160, 194, 183);
+    /* padding: 10px 10px 0; */
+}
+.cart_product{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid  rgb(77, 48, 48);
+    margin-top: 10px;
+}
+
+.textSize{
+    font-size: 20px;
+}
