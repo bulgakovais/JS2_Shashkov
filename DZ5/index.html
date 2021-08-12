@@ -25,13 +25,14 @@
             </div>
             <div class="header-right">
                 <button class="button textColor padRight" type="button"><i class="fas fa-bars"></i></button>
+
                 <button class="button-cart button textColor" type="button" @click="showCart = !showCart"><i
                         class="fas fa-shopping-cart"></i></button>
-                <div class="hidden cart-block" v-show="showCart">
-                    <p v-if="!cartItem.length" class="textColor">Ваша корзина совсем пуста.. :(</p>
-                    <div class="cart-item" v-for="item of cartItem" :key="item.id_product">
+                <div class="cart-block" v-show="showCart">
+                    <p v-if="!cartItems.length" class="textColor">Ваша корзина совсем пуста.. :(</p>
+                    <div class="cart-item" v-for="item of cartItems" :key="item.id_product">
                         <div class="cart_product">
-                            <img class="image-cart-product" src="image/shirt.jpg" alt="image">
+                            <img class="image-cart-product" alt="image">
                             <div class="description">
                                 <p class="product-title paragraf">{{item.product_name}}</p>
                                 <p class="product-quantity paragraf">Кол-во: {{item.quantity}}</p>
@@ -41,8 +42,9 @@
 
                         <div class="right-block">
                             <p class="product-price">Итого: {{item.quantity * item.price}}&nbspp.</p>
-                            <button class="delete-button" @click="remove(item)"><i class="fas fa-trash-alt"
-                                    data-id="${this.id_product}"></i></button>
+                            <button class="delete-button" @click="remove(item)">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -51,13 +53,17 @@
         <main>
             <div class="heading textColor">Каталог товаров</div>
             <div class="products">
-                <div class="product" v-for="product of products" :key="product.id_product" data-id="product.id_product">
-                    <img class="productImage" :src="image/shirt.jpg" alt="">
+
+                <p v-if="!filtered.length" class="textColor textSize">Нет данных. И товаров нет.. Ээх...</p>
+
+                <div class="product" v-for="product of filtered" :key="product.id_product">
+
+                    <img class="productImage" alt="image">
                     <div class="description">
                         <h3 class="textColor">{{product.product_name}}</h3>
-                        <p class="productPrice">{{product.price}} p.</p>
+                        <p class="productPrice">{{product.price}} ₽</p>
                     </div>
-                    <button @click="addProduct" class="addToCart">Добавить в корзину</button>
+                    <button @click="addProduct(product)" class="addToCart">Добавить в корзину</button>
                 </div>
             </div>
         </main>
