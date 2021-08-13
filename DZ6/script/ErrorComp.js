@@ -7,6 +7,7 @@ Vue.component("err", {
     },
     methods: {
         catchError(error, text) {
+            console.log(error)
             if (text) {
                 this.textErr = text;
                 this.errorHere = true;
@@ -14,6 +15,6 @@ Vue.component("err", {
         }
     },
     template: `
-            <p class = "textColor textSize" v-show="errorHere" v-model= 'catchError' >'${this.textErr}'</p>
+            <p class = "textColor textSize" v-show="errorHere"> {{ this.textErr }} </p>
     `
 })
