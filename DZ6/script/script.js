@@ -3,19 +3,19 @@ const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-a
 const app = new Vue({
     el: '#app',
     data: {
-        userSearch: '',
+        text: "Что-то пошло не так, попробуйте еще раз :)"
+        // userSearch: '',
         // img: 'image/shirt.jpg'
     },
     methods: {
         getJson(url) {
             return fetch(url)
                 .then(response => response.json())
-                .catch(error => console.log(error))
+                .catch(error => {
+                    this.$refs.err.catchError(error, this.text)
+                })
         },
     },
     computed: {
     },
-    mounted() {
-        console.log(this);
-    }
 })

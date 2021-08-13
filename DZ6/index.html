@@ -15,12 +15,13 @@
                 <a class="logo textColor" href="index.html">
                     <p class="padRight">LOgO</p>
                 </a>
-                <form action="#" class="search-form" @submit.prevent="filter">
+                <search ref="search"></search>
+                <!-- <form action="#" class="search-form" @submit.prevent="filter">
                     <input type="text" class="search-field" v-model="userSearch">
                     <button class="button-search button textColor" type="submit">
                         <i class=" fas fa-search"></i>
                     </button>
-                </form>
+                </form> -->
             </div>
             <div class="header-right">
                 <button class="button textColor padRight" type="button"><i class="fas fa-bars"></i></button>
@@ -29,9 +30,12 @@
         </header>
         <main>
             <div class="heading textColor">Каталог товаров</div>
+            <err ref="err"></err>
             <products ref="products" class="products"></products>
         </main>
     </div>
+    <script src="script/ErrorComp.js"></script>
+    <script src="script/SearchComp.js"></script>
     <script src="script/CartComp.js"></script>
     <script src="script/ProductComp.js"></script>
     <script src="script/script.js"></script>
