@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/229731a708.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <header class="header">
+            <div class="header-left">
+                <a class="logo textColor" href="index.html">
+                    <p class="padRight">LOgO</p>
+                </a>
+                <search ref="search"></search>
+            </div>
+            <div class="header-right">
+                <button class="button textColor padRight" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <cart ref="cart"></cart>
+            </div>
+        </header>
+        <main>
+            <div class="heading textColor">Каталог товаров</div>
+            <err ref="err"></err>
+            <products ref="products" class="products"></products>
+        </main>
+    </div>
+    <script src="script/ErrorComp.js"></script>
+    <script src="script/SearchComp.js"></script>
+    <script src="script/CartComp.js"></script>
+    <script src="script/ProductComp.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
