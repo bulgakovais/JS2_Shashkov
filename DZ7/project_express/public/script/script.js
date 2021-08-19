@@ -1,5 +1,5 @@
 const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses'
-
+const URL = `http://localhost:5555`
 const app = new Vue({
     el: '#app',
     data: {
@@ -10,7 +10,7 @@ const app = new Vue({
             return fetch(url)
                 .then(result => result.json())
                 .catch(error => {
-                    this.$refs.error.setError(error);
+                    this.$refs.err.catchError(error);
                 })
         },
         postJson(url, data) {
@@ -22,7 +22,7 @@ const app = new Vue({
                 body: JSON.stringify(data)
             }).then(result => result.json())
                 .catch(error => {
-                    this.$refs.error.setError(error);
+                    this.$refs.err.catchError(error);
                 });
         },
         putJson(url, data) {
@@ -34,7 +34,7 @@ const app = new Vue({
                 body: JSON.stringify(data)
             }).then(result => result.json())
                 .catch(error => {
-                    this.$refs.error.setError(error);
+                    this.$refs.err.catchError(error);
                 });
         },
         deleteJson(url, data) {
@@ -46,7 +46,7 @@ const app = new Vue({
                 body: JSON.stringify(data)
             }).then(result => result.json())
                 .catch(error => {
-                    this.$refs.error.setError(error);
+                    this.$refs.err.catchError(error);
                 });
         },
     },

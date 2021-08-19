@@ -1,7 +1,7 @@
 Vue.component('products', {
     data() {
         return {
-            catalogUrl: '',
+            catalogUrl: '/api/products',
             products: [],
             filtered: [],
         }
@@ -13,7 +13,7 @@ Vue.component('products', {
         }
     },
     mounted() {
-        this.$parent.getJson(`/api/products`)
+        this.$parent.getJson(`${URL + this.catalogUrl}`)
             .then(data => {
                 for (let el of data) {
                     this.products.push(el);

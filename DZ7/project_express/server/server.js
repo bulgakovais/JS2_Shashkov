@@ -1,9 +1,12 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors')
 const cartRouter = require('./cartRouter');
 const app = express();
 
+
 app.use(express.json());
+app.use(cors())
 app.use('/', express.static('./public'));
 app.use('/api/cart', cartRouter);
 
@@ -18,7 +21,8 @@ app.get('/api/products', (req, res) => {
   });
 });
 
-const port = 5555;
+
+const port = process.env.PORT || 5555;
 app.listen(port)
 //   , () => {
 //   console.log(`Listening ${port} port`);
