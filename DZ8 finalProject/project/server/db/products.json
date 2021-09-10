@@ -1,0 +1,50 @@
+[
+  {
+    "id_product": 124,
+    "product_name": "Mango People T-shirt",
+    "price": 32,
+    "img": "img/card1.png"
+  },
+  {
+    "id_product": 457,
+    "product_name": "Mango People Blouse",
+    "price": 35,
+    "img": "img/card2.png"
+  },
+  {
+    "id_product": 123,
+    "product_name": "Mango People Autumn Jacket",
+    "price": 115,
+    "img": "img/card3.png"
+  },
+  {
+    "id_product": 456,
+    "product_name": "Mango People Blouse with flowers",
+    "price": 37,
+    "img": "img/card4.png"
+  },
+  {
+    "id_product": 455,
+    "product_name": "Mango People wrap blouse",
+    "price": 55,
+    "img": "img/card5.png"
+  },
+  {
+    "id_product": 454,
+    "product_name": "Mango People Jacket for men",
+    "price": 92,
+    "img": "img/card6.png"
+  },
+  {
+    "id_product": 453,
+    "product_name": "Mango People breeches",
+    "price": 65,
+    "img": "img/card7.png"
+  },
+  {
+    "id_product": 451,
+    "product_name": "Mango People hoody",
+    "price": 68,
+    "img": "img/card8.png"
+  }
+]
