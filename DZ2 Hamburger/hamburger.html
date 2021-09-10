@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hamburger</title>
+</head>
+
+<body>
+    <!-- Здесь появится результат выбора после нажатия кнопки "Выбрать"-->
+    <div class="resultOfBurger"></div>
+    <div class="container">
+        <h1 class="heading">Собери себе гамбургер по вкусу!</h1>
+        <form action="">
+            <p class="text">Выберите размер гамбургера:</p>
+            <div class="form-check">
+                <input class="form-check-input-size" type="radio" name="gridRadios" id="big" value="big">
+                <label class="form-check-label" for="big">
+                    Большой
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input-size" type="radio" name="gridRadios" id="small" value="small">
+                <label class="form-check-label" for="small">
+                    Маленький
+                </label>
+            </div>
+        </form>
+        <form>
+            <p class="text">Выберите одну из начинок для гамбургера:</p>
+            <div class="form-check">
+                <input class="form-check-input-stuffing" type="radio" name="gridRadios" id="cheese" value="cheese">
+                <label class="form-check-label" for="cheese">
+                    Сыр
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input-stuffing" type="radio" name="gridRadios" id="salad" value="salad">
+                <label class="form-check-label" for="salad">
+                    Салат
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input-stuffing" type="radio" name="gridRadios" id="potato" value="potato">
+                <label class="form-check-label" for="potato">
+                    Картофель
+                </label>
+            </div>
+        </form>
+        <form>
+            <p class="text">Вам добавить майонез?</p>
+            <div class="form-check">
+                <input class="form-check-input-mayo" type="radio" name="gridRadios" id="mayoYes" value="mayoYes">
+                <label class="form-check-label" for="mayoYes">
+                    Да
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input-mayo" type="radio" name="gridRadios" id="mayoNo" value="mayoNo">
+                <label class="form-check-label" for="mayoNo">
+                    Нет
+                </label>
+            </div>
+        </form>
+        <form>
+            <p class="text">Вам добавить ароматную приправу?</p>
+            <div class="form-check">
+                <input class="form-check-input-flav" type="radio" name="gridRadios" id="flavYes" value="flavYes">
+                <label class="form-check-label" for="flavYes">
+                    Да
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input-flav" type="radio" name="gridRadios" id="flavNo" value="flavNo">
+                <label class="form-check-label" for="flavNo">
+                    Нет
+                </label>
+            </div>
+        </form>
+        <button class="submit">Выбрать</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
